@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Vendedores</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendedor.js"></script>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Tabela De Vendedores</h1>
+        </header>
+
+        <div>
+
+            <div class="card-container">
+                <div class="input">
+                    <label for="Nome">Nome: </label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="input">
+                    <label for="salario">Salário: </label>
+                    <input type="text" id="salario">
+                </div>
+                <div class="input">
+                    <label for="comissao">Comissão: </label>
+                    <input type="text" id="comissao">
+                </div>
+                <button onclick="vendedor.salvar()">Adicionar</button>
+
+                <div class="content">
+                    <table border="1">
+                        <thead>
+                            <th>Nome: </th>
+                            <th>Salário Final: </th>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

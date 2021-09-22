@@ -32,7 +32,7 @@ class Vendedor {
         let vendedor = {}
 
         vendedor.nomeVendedor = document.getElementById('nome').value;
-        vendedor.comissaoFinal = parseFloat(document.getElementById('comissao').value)* 1.15 + parseFloat(document.getElementById('salario').value);
+        vendedor.comissaoFinal = parseFloat(document.getElementById('comissao').value)* 0.15 + parseFloat(document.getElementById('salario').value);
 
         return vendedor; 
     } 
